@@ -8,7 +8,7 @@ The goal of this program is to live-test the capabilities of NLP to predict good
 The process of this program is visualized in the diagram below: 
 ![Blank diagram (2)](https://user-images.githubusercontent.com/118930217/204192404-feff15ae-936e-4eaa-bc64-317056e2634f.jpeg)
 
-The sources of the news is a website's RSS feed, specifically StreetInsider. The program fetches the information from the RSS feed on a customized interval. After it has parsed the information, the headline is sent to the Openai natural language processing model (NLP) (trained/created by me) for processing. The NLP assigns a category to the headline. Once a category is assigned, the headline gets placed into one of three CSVs: 
+The sources of the news is a website's RSS feed, specifically StreetInsider. The program fetches the information from the RSS feed on a customized interval. After it has parsed the information, the headline is sent to the Openai natural language processing (NLP) model (trained/created by me) for processing. The NLP assigns a category to the headline. Once a category is assigned, the headline gets placed into one of three CSVs: 
 - Trade news: ticker of news is in tradeable stocks list (low market cap), and the category is impactful
 - Public news: ticker of news is not in tradeable stocks list, but ticker is from a public company
 - Everything else: no stock ticker attached to news, probably irrelevant however useful in case of mislabeled news
